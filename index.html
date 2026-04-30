@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyrax Optics — Smart Pigeon Deterrent</title>
+  <meta name="description" content="AI-powered pigeon deterrent. Detects pigeons automatically and scares them away with a harmless water spray. No spikes, no nets, no chemicals.">
+  <meta property="og:title" content="Hyrax Optics — Smart Pigeon Deterrent">
+  <meta property="og:description" content="Set it and forget it. AI spots pigeons, a harmless water spray deters them.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-bg {
+      background: linear-gradient(160deg, #0f172a 0%, #1e293b 60%, #0f172a 100%);
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.7s ease both; }
+    .fade-up-2 { animation: fadeUp 0.7s 0.15s ease both; }
+    .fade-up-3 { animation: fadeUp 0.7s 0.3s ease both; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- ───────────────────── NAV ───────────────────── -->
+  <nav class="absolute top-0 left-0 right-0 z-20 px-6 py-5">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <span class="text-white font-bold text-xl tracking-tight select-none">
+        Hyrax<span class="text-sky-400"> Optics</span>
+      </span>
+      <a href="#notify"
+         class="bg-sky-500 hover:bg-sky-400 active:bg-sky-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors duration-150">
+        Get notified
+      </a>
+    </div>
+  </nav>
+
+  <!-- ───────────────────── HERO ───────────────────── -->
+  <section class="hero-bg relative min-h-screen flex items-center px-6 pt-20 overflow-hidden">
+    <!-- subtle grid overlay -->
+    <div class="absolute inset-0 opacity-[0.04]"
+         style="background-image: linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px),
+                                  linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px);
+                background-size: 40px 40px;">
+    </div>
+
+    <div class="relative max-w-6xl mx-auto w-full py-28 lg:py-36">
+      <div class="max-w-3xl">
+        <!-- badge -->
+        <span class="fade-up inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/25 text-sky-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-8 uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 bg-sky-400 rounded-full animate-pulse"></span>
+          Coming Soon
+        </span>
+
+        <h1 class="fade-up-2 text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
+          Pigeons don't<br>
+          <span class="gradient-text">stand a chance.</span>
+        </h1>
+
+        <p class="fade-up-3 text-lg sm:text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl">
+          Hyrax Optics uses a camera and on-device AI to spot pigeons the moment they approach —
+          then a short, harmless water spray sends them on their way.
+          No spikes. No nets. No chemicals. Just peace and quiet.
+        </p>
+
+        <div class="fade-up-3 flex flex-col sm:flex-row gap-4">
+          <a href="#notify"
+             class="inline-flex items-center justify-center bg-sky-500 hover:bg-sky-400 text-white font-semibold px-8 py-4 rounded-full text-base transition-colors duration-150 shadow-lg shadow-sky-500/25">
+            Join the waitlist
+          </a>
+          <a href="#how-it-works"
+             class="inline-flex items-center justify-center border border-slate-600 hover:border-slate-400 text-slate-300 hover:text-white font-medium px-8 py-4 rounded-full text-base transition-colors duration-150">
+            See how it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────── PROBLEM BAR ───────────────────── -->
+  <section class="bg-slate-900 border-t border-slate-800 py-6 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-10 text-center">
+      <span class="text-slate-500 text-sm font-medium">Old solutions that don't work:</span>
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <span class="text-slate-600 text-sm line-through decoration-slate-700">Spikes &amp; netting</span>
+        <span class="text-slate-600 text-sm line-through decoration-slate-700">Chemical repellents</span>
+        <span class="text-slate-600 text-sm line-through decoration-slate-700">Fake owls</span>
+        <span class="text-slate-600 text-sm line-through decoration-slate-700">Manual cleanup</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────── EMAIL SIGNUP ───────────────────── -->
+  <section id="notify" class="bg-gradient-to-br from-sky-50 to-indigo-50 py-20 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-3">Be first to know when we launch</h2>
+      <p class="text-gray-500 mb-8">
+        Join the waitlist and get early access + launch pricing when Hyrax Optics goes live.
+      </p>
+
+      <!-- ⚠ Replace YOUR_FORM_ID with your Formspree form ID, or swap for Netlify / any form backend -->
+      <form id="main-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input
+          type="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+          class="flex-1 px-5 py-4 rounded-full border border-gray-200 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm shadow-sm"
+        />
+        <button type="submit"
+                class="bg-sky-500 hover:bg-sky-600 active:bg-sky-700 text-white font-semibold px-7 py-4 rounded-full text-sm transition-colors duration-150 whitespace-nowrap shadow-md shadow-sky-500/20">
+          Notify me
+        </button>
+      </form>
+
+      <!-- success state -->
+      <div id="form-success" class="hidden mt-4 text-sky-600 font-medium text-sm">
+        You're on the list! We'll be in touch.
+      </div>
+
+      <p class="text-gray-400 text-xs mt-4">No spam. Unsubscribe any time.</p>
+    </div>
+  </section>
+
+  <!-- ───────────────────── HOW IT WORKS ───────────────────── -->
+  <section id="how-it-works" class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">How it works</h2>
+        <p class="text-gray-500 text-lg">Three steps. Fully automatic.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <!-- Step 1 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15 10l4.553-2.069A1 1 0 0121 8.82v6.36a1 1 0 01-1.447.894L15 14
+                   M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+            </svg>
+          </div>
+          <p class="text-sky-500 font-bold text-xs uppercase tracking-widest mb-2">01 — Detects</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Camera watches your space</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            A wide-angle camera monitors continuously — day and night, in any weather — so nothing slips through.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5
+                   m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21
+                   m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75
+                   a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5
+                   a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/>
+            </svg>
+          </div>
+          <p class="text-sky-500 font-bold text-xs uppercase tracking-widest mb-2">02 — Decides</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">AI confirms it's a pigeon</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            On-device AI identifies the species — ignoring other birds, people, and pets — before doing anything.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3c-1.2 5.4-6 8.4-6 12a6 6 0 0012 0c0-3.6-4.8-6.6-6-12z"/>
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 15v2M10 17h4"/>
+            </svg>
+          </div>
+          <p class="text-sky-500 font-bold text-xs uppercase tracking-widest mb-2">03 — Deters</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">A quick spray, problem solved</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            A short burst of water startles the pigeon away — harmless, chemical-free, and very effective.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────── BENEFITS ───────────────────── -->
+  <section class="py-24 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Hyrax Optics</h2>
+        <p class="text-gray-500 text-lg">Built for people who are done dealing with the mess.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Benefit 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Completely harmless</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Just water. No chemicals, no spikes, no traps. Safe for birds, pets, and people.
+          </p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Works 24/7</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Always on, day and night, rain or shine. Install it once and never think about pigeons again.
+          </p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Smart, not dumb</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            AI tells pigeons apart from other birds and people. No false triggers, no wasted spray.
+          </p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12
+                   M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875
+                   c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21
+                   h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Cleaner every day</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Fewer pigeons means less mess. Protect your balcony, rooftop, or facade long-term.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────── SOCIAL ───────────────────── -->
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">See it in action</h2>
+        <p class="text-gray-500 text-lg">Follow us for demos, behind-the-scenes, and launch updates.</p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-5 justify-center max-w-xl mx-auto mb-12">
+
+        <!-- TikTok -->
+        <a href="#"
+           class="group flex-1 bg-black rounded-2xl p-8 flex flex-col items-center gap-4 hover:bg-gray-900 transition-colors duration-150">
+          <svg class="w-9 h-9 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5
+                     2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01
+                     a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34
+                     6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.74
+                     a4.86 4.86 0 01-1.01-.05z"/>
+          </svg>
+          <div class="text-center">
+            <p class="text-white font-semibold text-sm">TikTok</p>
+            <p class="text-gray-400 text-xs">@hyraxoptics</p>
+          </div>
+          <span class="text-sky-400 text-sm font-medium group-hover:text-sky-300 transition-colors">Follow →</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="#"
+           class="group flex-1 rounded-2xl p-8 flex flex-col items-center gap-4 transition-opacity hover:opacity-90"
+           style="background: linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)">
+          <svg class="w-9 h-9 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919
+                     .058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849
+                     -.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07
+                     -3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92
+                     -.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849
+                     .149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z
+                     M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052
+                     .014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948
+                     .2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24
+                     c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98
+                     .059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947
+                     -.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z
+                     m0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324z
+                     M12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881
+                     1.44 1.44 0 000-2.881z"/>
+          </svg>
+          <div class="text-center">
+            <p class="text-white font-semibold text-sm">Instagram</p>
+            <p class="text-white/70 text-xs">@hyraxoptics</p>
+          </div>
+          <span class="text-white text-sm font-medium">Follow →</span>
+        </a>
+
+      </div>
+
+      <!-- Video embed placeholder — replace with actual TikTok/IG embeds when ready -->
+      <div class="bg-gray-50 border-2 border-dashed border-gray-200 rounded-2xl p-16 text-center max-w-2xl mx-auto">
+        <svg class="w-8 h-8 text-gray-300 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 010 1.972l-11.54 6.347
+               a1.125 1.125 0 01-1.667-.986V5.653z"/>
+        </svg>
+        <p class="text-gray-400 text-sm">Demo videos coming soon — follow us to be the first to see</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────────────────── FINAL CTA ───────────────────── -->
+  <section class="hero-bg py-24 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-white mb-4">Ready to take back your space?</h2>
+      <p class="text-slate-400 text-lg mb-10">
+        Get early access and launch pricing — join the waitlist today.
+      </p>
+
+      <!-- ⚠ Replace YOUR_FORM_ID with your Formspree form ID -->
+      <form id="footer-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input
+          type="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+          class="flex-1 px-5 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm backdrop-blur-sm"
+        />
+        <button type="submit"
+                class="bg-sky-500 hover:bg-sky-400 active:bg-sky-600 text-white font-semibold px-7 py-4 rounded-full text-sm transition-colors duration-150 whitespace-nowrap shadow-lg shadow-sky-500/25">
+          Notify me
+        </button>
+      </form>
+
+      <div id="footer-success" class="hidden mt-4 text-sky-400 font-medium text-sm">
+        You're on the list! We'll be in touch.
+      </div>
+
+      <p class="text-slate-600 text-xs mt-4">No spam. Unsubscribe any time.</p>
+    </div>
+  </section>
+
+  <!-- ───────────────────── FOOTER ───────────────────── -->
+  <footer class="bg-slate-950 border-t border-slate-900 py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span class="text-white font-bold text-lg select-none">
+        Hyrax<span class="text-sky-400"> Optics</span>
+      </span>
+      <p class="text-slate-600 text-sm">© 2026 Hyrax Optics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ───────────────────── FORM SCRIPT ───────────────────── -->
+  <script>
+    // Wire up both email forms to show a success message.
+    // To connect a real backend, replace the fetch() call with your Formspree/Netlify endpoint.
+    function handleForm(formId, successId) {
+      const form = document.getElementById(formId);
+      const msg  = document.getElementById(successId);
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]').value;
+        console.log('Waitlist signup:', email); // ← hook up your backend here
+
+        form.style.display = 'none';
+        msg.classList.remove('hidden');
+      });
+    }
+
+    handleForm('main-form',   'form-success');
+    handleForm('footer-form', 'footer-success');
+  </script>
+
+</body>
+</html>
